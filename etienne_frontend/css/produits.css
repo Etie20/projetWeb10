@@ -1,0 +1,244 @@
+/*GENERAL*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,9008display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Oswald','Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+body{
+    background-color: #999999;
+    margin: 0 auto;
+}
+.lay1{
+    background : #FF6000;
+    position : relative;
+    left : 153px;
+    top : 171px;
+    /*width : 882px;*/
+    width : 78.25%;
+    height : 251px;
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+}
+.info{
+    margin-left: 60%;
+    margin-top: 10%;
+    position: absolute;
+}
+.info2{
+    display: none;
+    margin-left: 15%;
+    margin-top: 35%;
+    position: absolute;
+}
+.prix{
+    margin-top: 10px;
+}
+.lay2{
+    background : #454545;
+    position : relative;
+    left : 153px;
+    top : 171px;
+    width : 78.25%;
+    height : 290px;
+    border-bottom-left-radius: 27px;
+    border-bottom-right-radius: 27px;
+}
+.test{
+    width : 500px;
+    height : 500px;
+    background: #999999;
+}
+.acheter{
+    font-size: 20px;
+    color: white;
+    border-style: none;
+    background : rgba(235, 45, 57, 1);
+    left : 398px;
+    top : 598px;
+    width : 287px;
+    height : 63px;
+    border-radius : 27px;
+    -moz-border-radius : 27px;
+    -webkit-border-radius : 27px;
+    margin-right: 15px;
+}
+.acheter2{
+    position: relative;
+    font-size: 20px;
+    color: white;
+    border-style: none;
+    background : black;
+    margin-top: 20%;
+    margin-left: 70%;
+    width : 287px;
+    height : 63px;
+    border-radius : 27px;
+    -moz-border-radius : 27px;
+    -webkit-border-radius : 27px;
+    margin-right: 15px;
+}
+#produitForm{
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 6% 35%;
+}
+#icon1
+{
+    margin: 78% 80%;
+    position: absolute;
+}
+.icon{
+    font-size: 20px;
+    color: white;
+    border-style: none;
+    background : rgba(235, 45, 57, 1);
+    left : 398px;
+    top : 598px;
+    width : 65px;
+    height : 63px;
+    border-radius : 27px;
+    -moz-border-radius : 27px;
+    -webkit-border-radius : 27px;
+}
+
+.placeImage{
+    background-image: url(../imageTest/passion.png);
+    background-color: rgba(41, 171, 226, 1);
+    background-size: cover;
+    position : absolute ;
+    margin: 2% 2%;
+    left : 192px;
+    top : 120px;
+    width : 414px;
+    height : 402px;
+    box-shadow : 15px 15px 0px rgba(237, 0, 57, 1);
+    filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=15, OffY=15, Color='#ED0039') ;
+    border-radius: 27px;
+}
+@media screen and (max-width: 1100px){
+    .lay1{
+        left : 100px;
+    }
+    .lay2{
+        left : 100px;
+    }
+    .placeImage{
+        left: 100px;
+    }
+    .acheter2{
+        margin-left: 45%;
+    }
+}
+@media screen and (max-width: 1050px){
+    .info{
+        margin-left: 65%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .lay1{
+        left: 150px;
+        width: 500px;
+    }
+    .lay2{
+        left: 150px;
+        width: 500px;
+        height : 400px;
+    }
+    .placeImage{
+        left: 150px;
+    }
+    .info{
+        display: none;
+    }
+    .info2{
+        display: block;
+    }
+    #produitForm{
+        position: absolute;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 6% 200px;
+    }
+    .acheter2{
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .lay1 {
+        left: 40px;
+    }
+
+    .lay2 {
+        left: 40px;
+    }
+    .placeImage{
+        left: 50px;
+    }
+    #produitForm{
+        position: absolute;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 6% 70px;
+    }
+    .info2{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .acheter2{
+        margin-top: 30%;
+        margin-left: 18%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .lay1 {
+        left: 40px;
+        width: 435px;
+    }
+
+    .lay2 {
+        left: 40px;
+        width: 435px;
+    }
+    .placeImage{
+        left: 50px;
+        width: 380px;
+    }
+    .info2{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .acheter2{
+        margin-top: 35%;
+    }
+
+}
+@media screen and (max-width: 700px) {
+
+    .lay1 {
+        left: 30px;
+    }
+
+    .lay2 {
+        left: 30px;
+    }
+    .placeImage{
+        left: 50px;
+    }
+    .acheter2{
+        margin-left: 18%;
+        margin-top: 40%;
+    }
+
+}

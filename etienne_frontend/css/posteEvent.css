@@ -1,0 +1,139 @@
+/*GENERAL*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,9008display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Oswald','Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.rectangle {
+    border-style: solid;
+    border-color: #999999;
+    width: 80%;
+    height: 300px;
+    margin: 4% 10%;
+    position: relative;
+    alignment: center;
+}
+.rectangle2{
+    font-size: 25px;
+    border-style: solid;
+    border-color: #999999;
+    width: 80%;
+    height: 300px;
+    margin: 4% 10%;
+    position: relative;
+    padding-left: 10px;
+}
+.banner {
+    color: white;
+    position: absolute;
+    background-color: red;
+    width: 40%;
+    height: 50px;
+    margin-top: 0;
+    margin-left: 30%;
+    text-align: center;
+}
+.banner p{
+    font-size: 18px;
+}
+.icon{
+    position: absolute;
+    color: white;
+    border-style: none;
+    background : red;
+    left : 45%;
+    top : 45%;
+    width : 65px;
+    height : 63px;
+    border-radius : 27px;
+    -moz-border-radius : 27px;
+    -webkit-border-radius : 27px;
+}
+.date {
+    position: relative;
+    color: white;
+    border-style: none;
+    background : #999999;
+    margin-top: 27%;
+    margin-left: 38%;
+    width : 200px;
+    height : 60px;
+    border-radius : 27px;
+    -moz-border-radius : 27px;
+    -webkit-border-radius : 27px;
+    text-align: center;
+    padding-top: 15px;
+}
+.date p{
+    font-size: 20px;
+}
+.send{
+    position: relative;
+    color: white;
+    border-style: none;
+    background : #999999;
+    width : 200px;
+    height : 60px;
+    border-radius : 27px;
+    -moz-border-radius : 27px;
+    -webkit-border-radius : 27px;
+    margin: 2% 15px 5% 40%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .date{
+        margin: 30% 15px 5% 38%;
+    }
+
+}
+@media screen and (max-width: 1050px) {
+    .date{
+        margin: 35% 15px 5% 38%;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .date{
+        margin: 38% 15px 5% 38%;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .date{
+        margin: 40% 15px 5% 38%;
+    }
+
+}
+@media screen and (max-width: 750px) {
+    .date{
+        margin: 45% 15px 5% 38%;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .date{
+        margin: 50% 15px 5% 30%;
+    }
+}
+@media screen and (max-width: 650px) {
+    .date{
+        margin: 56% 15px 5% 30%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .date{
+        margin: 65% 15px 5% 30%;
+    }
+    .send{
+        margin: 2% 15px 5% 33%;
+    }
+}

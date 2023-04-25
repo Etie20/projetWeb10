@@ -38,6 +38,16 @@ CREATE TABLE `inscrip_salaries` (
 	`password` varchar(12) NOT NULL,
 	PRIMARY KEY (`id_salaries`)
 );
+CREATE TABLE `token` (
+	`id_token` varchar(04) ,
+	`id_user` varchar(10) NOT NULL,
+	`token` varchar(255) NOT NULL,
+	`expires_at` TIMESTAMP DEFAULT NULL,
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  	`updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	`fonction` ENUM('etudiant', 'salaries') NOT NULL, 
+	PRIMARY KEY (`id_token`)
+);
 
 CREATE TABLE `manifestation` (
 	`id_manif` varchar(04),
@@ -166,7 +176,7 @@ ALTER TABLE `panier` ADD CONSTRAINT `panier_fk1` FOREIGN KEY (`id_produit`) REFE
 ALTER TABLE `panier` ADD CONSTRAINT `panier_fk2` FOREIGN KEY (`id_etudiant`) REFERENCES `inscrip_etudiant`(`id_etudiant`);
 
 ALTER TABLE `produit` ADD CONSTRAINT `produit_fk0` FOREIGN KEY (`id_categorie`) REFERENCES `categorie`(`id_categorie`);
-
+ 
 
 
 

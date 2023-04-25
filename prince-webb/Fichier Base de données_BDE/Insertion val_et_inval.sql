@@ -40,6 +40,10 @@ VALUES ('S000', 'xxxx.xxxx@example.com', 'xxxxxx', 'xxxxxxx');
 INSERT INTO inscrip_etudiant (id_etudiant, email, username, password)
 VALUES ('E000', 'xxxx.xxxx@example.com', 'xxxxxx', 'xxxxxxx');
 
+-- la table token
+INSERT INTO token (id_token, id_user, token, expires_at, created_at, updated_at, fonction)
+VALUES ('T000', 'xxxx', 'xxxxxxxx', '2023-06-30 23:59:59', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP, 'xxxxxxxx');
+
 -- la table manifestation
 INSERT INTO manifestation (id_manif, nom_manif, description, image_manif, date_prevu, signaler)
 VALUES ('M000', 'xxxxxxxxx', 'xxxxxxxx', LOAD_FILE('/chemin/vers/image.jpg'), 'xxxxxxx',  FALSE);

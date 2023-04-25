@@ -44,6 +44,26 @@ SET NEW.id_etudiant = CONCAT('E', LPAD((SUBSTR((SELECT MAX(id_etudiant) FROM ins
 END$$
 DELIMITER ;
 
+-- Trigger pour les identifiants de la table token
+
+DELIMITER $$
+CREATE TRIGGER update_id_trigger_token
+BEFORE INSERT ON token
+FOR EACH ROW
+BEGIN
+SET NEW.id_token = CONCAT('T', LPAD((SUBSTR((SELECT MAX(id_token) FROM token), 2) + 1), 3, '0'));
+END$$
+DELIMITER ;
+
+-- Trigger pour la mise a jour de l'horodatage de la table token (((FACULTATIF //parceque la clause "ON UPDATE CURRENT_TIMESTAMP," qui est dans le fichier creation de la table token joue le meme role que ce trigger)))
+
+
+-- CREATE TRIGGER maj_on_time
+-- BEFORE UPDATE ON token
+-- FOR EACH ROW
+-- SET NEW.updated_at = CURRENT_TIMESTAMP;
+
+
 -- Trigger pour les identifiants de la table manifestation
 
 DELIMITER $$

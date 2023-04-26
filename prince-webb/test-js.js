@@ -21,6 +21,7 @@ const config = {
   colors: [
     '#FFB82A',
     '#FF482A',
+    '#FF482A',
     '#FF6D00',
     '#1dc1ec',
     '#FF487A',

@@ -22,6 +22,8 @@ h1{
 
 body{
 
+    
+    
     background-color: #646464;
     
 background-image: url(topography.svg);
@@ -282,6 +284,7 @@ svg{
 
     position: relative;
     padding: 50px;
+    
 
 
 }
@@ -358,7 +361,27 @@ padding: 35px 10px ;
     }
 
 
+.sec.s2 .actualite{
 
+    display: inline-flex;
+    margin: 0px ;
+    padding: 0px;
+    justify-content: center;
+    position: relative;
+  
+    left: -43px;
+
+    background: rgb(209,0,255);
+background: linear-gradient(90deg, rgba(209,0,255,1) 37%, rgba(0,210,249,1) 98%);
+ 
+    
+}
+
+.sec.s2 h1{
+
+padding: 0px;
+margin: 0px;
+}
 .sec.s2 h1{
 
    font-size: 150px;
@@ -367,11 +390,30 @@ padding: 35px 10px ;
 .sec.s2 h2{
 
     font-size: 65px;
-    font-weight: lighter;
     color: #fff;
     font-weight: 250;
+    margin-bottom: 45px;
+    padding: 45px 0px 45px 45px;
 
  }
+
+ .sec.s2 p{
+    font-family: Montserrat;
+    font-size: 21px;
+    color: #fff;
+    padding: 15px 60px;
+
+ }
+
+ .sec.s2 .img_txt{
+    
+    transform-origin: right;
+    justify-content: left;
+    height: 75vh;
+    width: 75vw;
+    background-color: white;
+ }
+
 .sec.s2 .title{
 
    
